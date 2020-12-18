@@ -1,0 +1,63 @@
+@import "~react-vis/dist/style";
+
+.converter {
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  &-controls {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+  }
+  &-from,
+  &-to {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0px 2px 7px 0px #bdb4ae85;
+    border-radius: 3px;
+    padding: 15px 0;
+    flex: 0.5;
+  }
+  &__buttons {
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: linear 0.2s;
+
+    @media (min-width: 991px) {
+      &:hover {
+        color: #ffffff;
+        background-color: darken(#c3c3c3, 40);
+      }
+    }
+  }
+  &__input {
+    width: 50%;
+    padding: 10px;
+    border-color: #5c412b5c;
+    border-radius: 3px;
+    color: #5c412b;
+  }
+  &__arrows {
+    width: 50px;
+    margin: 0 30px;
+  }
+}
+
+.graph {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
+  box-shadow: 0px 2px 7px 0px #bdb4ae85;
+  height: 400px;
+  margin: 0 50px 80px 50px;
+}

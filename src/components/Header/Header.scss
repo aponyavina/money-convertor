@@ -1,0 +1,44 @@
+.header {
+  background-color: #fcf5f1;
+  box-shadow: -2px 1px 20px 0 #bdb4ae8c;
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+  }
+  &__logo {
+    width: 100px;
+    object-fit: cover;
+  }
+  &-nav {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 0.5;
+    &__link {
+      font-size: 20px;
+      text-decoration: none;
+      color: #836c59;
+      // text-transform: uppercase;
+      font-weight: bold;
+      position: relative;
+      &:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #836c59;
+        transform: scale(0);
+        transition: linear 0.2s;
+      }
+      &:hover:after {
+        transform: scale(1);
+      }
+      &:focus:after {
+        transform: scale(1);
+      }
+    }
+  }
+}
